@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_elevation">5sp</dimen>
+    <dimen name="navigationMarginTop">100sp</dimen>
+    <dimen name="marginTvHeader">15sp</dimen>
+    <dimen name="navigationHeaderHeight">100sp</dimen>
+    <dimen name="HeaderElevation">5sp</dimen>
+    <dimen name="toolbar_all_page">15sp</dimen>
+    <dimen name="tvActivityQuestionMargin">15sp</dimen>
+    <dimen name="cvQuestionActivityMargin">10sp</dimen>
+    <dimen name="cvQuestionActivityPadding">10sp</dimen>
+    <dimen name="cvQuestionActivityElevation">5sp</dimen>
+    <dimen name="etQuestionActivityHeight">50sp</dimen>
+    <dimen name="etQuestionActivityTextSize">15sp</dimen>
+    <dimen name="cvQuestionActivityDate">15sp</dimen>
+    <dimen name="cvReportActivityPadding">10sp</dimen>
+    <dimen name="cvReportActivityMargin">10sp</dimen>
+    <dimen name="cvReportActivityElevation">5sp</dimen>
+    <dimen name="cvReportActivityheight">50sp</dimen>
+    <dimen name="trReportActivityMarginRight">15sp</dimen>
+    <dimen name="pbReprtActivity">15sp</dimen>
+    <dimen name="tvReportActivityMargin">15sp</dimen>
+    <dimen name="tvMessageActivityMargin">15sp</dimen>
+    <dimen name="tvMessageActivityTitleTextSize">18sp</dimen>
+    <dimen name="cvMessageActivityMargin">15sp</dimen>
+    <dimen name="cvMessageActivityElevation">5sp</dimen>
+    <dimen name="trLoginActivityMargin">15sp</dimen>
+    <dimen name="etLoginActivityHeight">50sp</dimen>
+    <dimen name="tvLoginActivityTextSize">15sp</dimen>
+    <dimen name="trProfileActivityMargin">15sp</dimen>
+    <dimen name="tvProfileActivityTextSize">15sp</dimen>
+    <dimen name="imgActivityMainSize">100sp</dimen>
+    <dimen name="cvSettingActivityMargin">15sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="radio_button">16dp</dimen>
+</resources>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arithtopia.android.com.arithtopia.QuestionActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_all_page"></include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/cvQuestionActivityDate">
+
+                    <TextView
+                        android:id="@+id/tvQuestionActivityDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6  بهمن  1396"
+                        android:layout_weight="1"
+                        android:gravity="right"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_time_date"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btnQuestionActivitySave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryNew"
+        android:text="@string/save"
+        android:textColor="@color/colorQuestionActivitySave" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnQuestionActivitySave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvQuestion_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 1 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnQuestion_1_No"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="خیر"
+                                android:background="@color/colorAccentNew"
+                                android:textColor="@color/colorBtnQuestionNo"/>
+
+                            <Button
+                                android:id="@+id/btnQuestion_1_Yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="بله"
+                                android:background="@color/colorPrimaryNew"
+                                android:textColor="@color/colorBtnQuestionYes"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvQuestion_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 2 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnQuestion_2_No"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="خیر"
+                                android:background="@color/colorAccentNew"
+                                android:textColor="@color/colorBtnQuestionNo"/>
+
+                            <Button
+                                android:id="@+id/btnQuestion_2_Yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="بله"
+                                android:background="@color/colorPrimaryNew"
+                                android:textColor="@color/colorBtnQuestionYes"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvQuestion_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 3 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnQuestion_3_No"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="خیر"
+                                android:background="@color/colorAccentNew"
+                                android:textColor="@color/colorBtnQuestionNo"/>
+
+                            <Button
+                                android:id="@+id/btnQuestion_3_Yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="بله"
+                                android:background="@color/colorPrimaryNew"
+                                android:textColor="@color/colorBtnQuestionYes"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/tvQuestion_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 4 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <EditText
+                                android:id="@+id/etQuestion_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/etQuestionActivityHeight"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:hint="@string/answerHint"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:lines="10"
+                                android:textSize="@dimen/etQuestionActivityTextSize"
+                                android:background="@drawable/et_drawable"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/tvQuestion_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 5 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <EditText
+                                android:id="@+id/etQuestion_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/etQuestionActivityHeight"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:hint="@string/answerHint"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:lines="10"
+                                android:textSize="@dimen/etQuestionActivityTextSize"
+                                android:background="@drawable/et_drawable"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CVQuestion_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvQuestionActivityPadding"
+                android:layout_margin="@dimen/cvQuestionActivityMargin"
+                app:cardElevation="@dimen/cvQuestionActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/tvQuestion_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سوال 6 :"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/tvActivityQuestionMargin"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <EditText
+                                android:id="@+id/etQuestion_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/etQuestionActivityHeight"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:hint="@string/answerHint"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:lines="10"
+                                android:textSize="@dimen/etQuestionActivityTextSize"
+                                android:background="@drawable/et_drawable"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

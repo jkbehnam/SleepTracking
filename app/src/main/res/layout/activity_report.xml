@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arithtopia.android.com.arithtopia.ReportActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_all_page"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cvReportActivityheight"
+                android:layout_below="@id/toolbar"
+                android:padding="@dimen/cvReportActivityPadding"
+                android:layout_margin="@dimen/cvReportActivityMargin"
+                app:cardElevation="@dimen/cvReportActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/trReportActivityMarginRight">
+
+                            <TextView
+                                android:id="@+id/tvReportActivityDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/moreDetail"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorAccentNew"/>
+
+                            <TextView
+                                android:id="@+id/tvReportActivityRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:layout_weight="1"
+                                android:gravity="right"/>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="امتیاز کل شما :"
+                                android:gravity="right"
+                                android:layout_weight="1"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvReportActivityPadding"
+                android:layout_margin="@dimen/cvReportActivityMargin"
+                app:cardElevation="@dimen/cvReportActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="نمودار سوال های پاسخ داده شده :"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:layout_margin="@dimen/tvReportActivityMargin"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cvReportActivityPadding"
+                android:layout_margin="@dimen/cvReportActivityMargin"
+                app:cardElevation="@dimen/cvReportActivityElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/cvReportActivityMargin">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="عملکرد کلی شما :"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:layout_margin="@dimen/tvReportActivityMargin"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ProgressBar
+                                android:id="@+id/pbReportActivityAllReport"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="@dimen/pbReprtActivity"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

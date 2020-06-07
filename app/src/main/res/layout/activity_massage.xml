@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arithtopia.android.com.arithtopia.MessageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_all_page"></include>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/cvMessageActivityMargin"
+        app:cardElevation="@dimen/cvMessageActivityElevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عنوان پیام"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textSize="@dimen/tvMessageActivityTitleTextSize"
+                        android:textColor="@color/tvMessageActivityTitleColor"
+                        android:layout_margin="@dimen/tvMessageActivityMargin"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="متن پیام در یک خط به صورت پیش نمایش قرار می گیرد "
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_margin="@dimen/tvMessageActivityMargin"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

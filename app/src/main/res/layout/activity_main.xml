@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <ImageView
+        android:id="@+id/Add_Gamer"
+        android:layout_width="@dimen/imgActivityMainSize"
+        android:layout_height="@dimen/imgActivityMainSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="54dp"
+        app:srcCompat="@drawable/new_ic_add_gamer"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgReport"
+        android:layout_width="@dimen/imgActivityMainSize"
+        android:layout_height="@dimen/imgActivityMainSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Add_Gamer"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        app:srcCompat="@drawable/new_ic_sell_question"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgCappAdvice"
+        android:layout_width="@dimen/imgActivityMainSize"
+        android:layout_height="@dimen/imgActivityMainSize"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="92dp"
+        app:srcCompat="@drawable/new_ic_exchange_question"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imgMyMessage"
+        android:layout_width="@dimen/imgActivityMainSize"
+        android:layout_height="@dimen/imgActivityMainSize"
+        android:layout_alignBottom="@+id/imgCappAdvice"
+        android:layout_alignEnd="@+id/imgReport"
+        android:layout_alignRight="@+id/imgReport"
+        app:srcCompat="@drawable/new_ic_get_answer"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Add_Gamer"
+        android:layout_alignRight="@+id/Add_Gamer"
+        android:layout_below="@+id/Add_Gamer"
+        android:layout_marginTop="15sp"
+        android:text="@string/add_gamer"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignLeft="@+id/imgReport"
+        android:layout_alignStart="@+id/imgReport"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/selling_question" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/imgMyMessage"
+        android:layout_marginTop="19dp"
+        android:text="@string/get_answer" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgCappAdvice"
+        android:layout_alignRight="@+id/imgCappAdvice"
+        android:layout_alignTop="@+id/textView20"
+        android:text="@string/exchange_question"
+        android:gravity="right"/>
+
+
+</RelativeLayout>

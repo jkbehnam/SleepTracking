@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arithtopia.android.com.arithtopia.ProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_all_page">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/btnProfileActivitySave">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/trProfileActivityMargin">
+
+                    <EditText
+                        android:id="@+id/etProfileActivityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/etLoginActivityHeight"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_drawable"
+                        android:hint="نام"
+                        android:textSize="@dimen/tvProfileActivityTextSize"
+
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/trProfileActivityMargin">
+
+                    <EditText
+                        android:id="@+id/etProfileActivityFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/etLoginActivityHeight"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_drawable"
+                        android:hint="نام خانوادگی"
+                        android:textSize="@dimen/trProfileActivityMargin"
+
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/trProfileActivityMargin">
+
+                    <EditText
+                        android:id="@+id/etProfileActivityNationalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/etLoginActivityHeight"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_drawable"
+                        android:hint="کد ملی"
+                        android:textSize="@dimen/trProfileActivityMargin"
+
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/trProfileActivityMargin">
+
+                    <EditText
+                        android:id="@+id/etProfileActivityBirthDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/etLoginActivityHeight"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_drawable"
+                        android:hint="تاریخ تولد"
+                        android:inputType="time"
+                        android:textSize="@dimen/trProfileActivityMargin"
+
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/trProfileActivityMargin">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rbProfileActivityMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="مرد"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorAccentNew"
+                            android:textColorHighlight="@color/colorAccentNew"/>
+
+                        <RadioButton
+                            android:id="@+id/rbProfileActivityFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="زن"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorAccentNew"
+                            android:textColorHighlight="@color/colorAccentNew"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="جنسیت : "
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnProfileActivitySave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ذخیره اطلاعات"
+        android:background="@color/colorPrimaryNew"
+        android:textColor="@color/btnProfileActivityTextColor"/>
+
+</RelativeLayout>

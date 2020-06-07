@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ArithTopia</string>
+    <string name="about_us">درباره ما</string>
+    <string name="advise">توصیه های استفاده از CAPP</string>
+    <string name="exchange_question">انتقال سوال</string>
+    <string name="get_answer">دریافت حل</string>
+    <string name="profile">حساب کاربری</string>
+    <string name="add_gamer">افزودن بازیکن جدید</string>
+    <string name="selling_question">فروش سوال</string>
+    <string name="settings">تنظیمات</string>
+    <string name="save">ذخیره</string>
+    <string name="answerHint">پاسخ خود را بنویسید ...</string>
+    <string name="moreDetail">جزئیات بیشتر</string>
+    <string name="login">ورود کاربران</string>
+    <string name="NotificationSetting">مایلید خواندن پیام در چه ساعتی از شبانه روز به شما یادآوری شود ؟</string>
+    <string name="Time">5 بعد از ظهر</string>
+    <string name="title_activity_add__new__gamer">Add_New_Gamer</string>
+    
+    <string name="gamer_fname">نام و نام خانوادگی</string>
+    <string name="gamer_sex">جنسیت</string>
+    <string name="gamer_member_number">تعداد اعضا</string>
+
+    <string name="lname">نام</string>
+    <string name="fname">نام خانوادگی</string>
+    <string name="age">سن</string>
+    <string name="sex">جنسیت</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="cancle">انصراف</string>
+<string name="Registration_time">زمان ثبت نام</string>
+    <string name="male">مرد</string>
+    <string name="female">زن</string>
+
+    <string name="submit">تایید</string>
+    <string name="edit">ویرایش</string>
+    <string name="delete">حذف</string>
+<string name="cancel">انصراف</string>
+    <string name="show_qrcode">نمایش کد</string>
+</resources>
